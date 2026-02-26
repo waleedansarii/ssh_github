@@ -27,7 +27,8 @@ Using SSH to interact with [GitHub](chatgpt://generic-entity?number=0) provides 
 ## Steps to follow:
 
 - Open terminal, type ssh-keygen: if the key isn't created beforehand
-- Start ssh agent, type ssh-add ~/.ssh/id_ed
+- Start ssh agent, eval "$(ssh-agent -s)"
+- ssh-add ~/.ssh/id_ed
 - ls ~/.ssh, to view the key folder
 - You will see id_ed.pub or rsa.pub thats the public key, type cat ~/.ssh/id_ed.pub
 - Copy the output
